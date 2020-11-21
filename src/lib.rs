@@ -18,7 +18,7 @@ const STATS_URL: &str = "/index_lite.ws?player=";
 ///
 /// ```
 /// use osrs_api::gamemode::Gamemode;
-/// let my_hiscore = osrs_api::get_hiscore("meantub".to_string(), Gamemode::Main)
+/// let my_hiscore = osrs_api::get_hiscore("meantub".to_string(), Gamemode::Main);
 /// println!("{}", my_hiscore.unwrap());
 /// ```
 pub fn get_hiscore(username: String, gamemode: Gamemode) -> Option<Hiscore> {

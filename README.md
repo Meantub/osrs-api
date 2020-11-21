@@ -28,3 +28,4 @@ There are XP calculations that are being worked on, apparently the data structur
 * More testing
 * Grand Exchange/Item APIs
 * Maybe add a single import to make things easier `osrs_api::prelude::*`
+* Add more to the docs so that docs.rs can look nice
