@@ -21,9 +21,10 @@ There are XP calculations that are being worked on, apparently the data structur
 
 ## TODO
 * Experience precision 32 bit integer with 1 decimal point
-* Conditional compilation with features for std::fmt::Display traits
+* Conditional compilation with features for `std::fmt::Display` traits
 * Make a constants module
 * Include more of the activities in the game
 * Maybe RS3, don't know much about it
 * More testing
 * Grand Exchange/Item APIs
+* Maybe add a single import to make things easier `osrs_api::prelude::*`
