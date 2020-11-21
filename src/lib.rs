@@ -13,6 +13,14 @@ const HISCORE_URL: &str = "https://secure.runescape.com/m=hiscore_oldschool";
 const STATS_URL: &str = "/index_lite.ws?player=";
 
 // TODO: Turn the Option to a Result
+/// Gets the hiscore of a specific username in a specific game mode
+/// # Examples
+///
+/// ```
+/// use osrs_api::gamemode::Gamemode;
+/// let my_hiscore = osrs_api::get_hiscore("meantub".to_string(), Gamemode::Main)
+/// println!("{}", my_hiscore.unwrap());
+/// ```
 pub fn get_hiscore(username: String, gamemode: Gamemode) -> Option<Hiscore> {
     let url_prefix = match gamemode.clone() {
         Gamemode::Main => HISCORE_URL.to_string(),
